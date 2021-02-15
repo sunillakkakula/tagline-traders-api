@@ -22,13 +22,13 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.vtt.apps.exception.UserNotFoundException;
-import com.vtt.apps.model.Users;
+import com.vtt.apps.model.UserDetails;
 import com.vtt.apps.service.UserService;
 
 @RestController
 @RequestMapping("/api")
 @CrossOrigin(origins = "http://localhost:9090")
-public class UserController {
+public class UserDetailsController {
 
 	private final Logger LOGGER = LoggerFactory.getLogger(getClass());
 
@@ -37,22 +37,22 @@ public class UserController {
 
 	// Get All users
 	@GetMapping("/user")
-	public Optional<List<Users>> retrieveAll() {
+	public Optional<List<UserDetails>> retrieveAll() {
 		LOGGER.info("Executing retrieveAll in UsersController");
-		Optional<List<Users>> usersList = null;
-		usersList = userService.fetchAllUsers();
+		Optional<List<UserDetails>> usersList = null;
+		usersList = userService.fetchAllUserDetails();
 		return  usersList;
 	}
 
 	// Create a new user
 	@PostMapping("/user")
-	public ResponseEntity<Object>  createUser(@Valid @RequestBody Users user ) {
+	public ResponseEntity<Object>  createUser(@Valid @RequestBody UserDetails user ) {
 		LOGGER.info("Executing createUsers in UsersController user : "+user );
 
 
 		LOGGER.info("user : "+user);
 		System.err.println("******* user *********: "+user);
-		Optional<Users> createdUser = userService.save(user);
+		Optional<UserDetails> createdUser = userService.save(user);
 
 		URI location = ServletUriComponentsBuilder
 				.fromCurrentRequest()
@@ -63,9 +63,9 @@ public class UserController {
 
 	// Validate a user
 	@PostMapping("/user/login")
-	public Optional<Users> validateUser(@Valid @RequestBody Users user ) {
+	public Optional<UserDetails> validateUser(@Valid @RequestBody UserDetails user ) {
 		LOGGER.info("Executing validateUser in UsersController");
-		Optional<Users> tempUser = null;
+		Optional<UserDetails> tempUser = null;
 		tempUser  = userService.fetchUsersByNamePassword(user);
 		if (!tempUser.isPresent())
 			throw new UserNotFoundException("id-" +user.getName());
@@ -74,9 +74,9 @@ public class UserController {
 
 	// Get a Single user by ID
 	@GetMapping("/user/{id}")
-	public Optional<Users>   getUserById(@PathVariable(value = "id") Long userId) {
+	public Optional<UserDetails>   getUserById(@PathVariable(value = "id") Long userId) {
 		LOGGER.info("Executing getUserById in UsersController");
-		Optional<Users> user = userService.fetchUserById(userId);
+		Optional<UserDetails> user = userService.fetchUserDetailsById(userId);
 		if (!user.isPresent())
 			throw new UserNotFoundException("id-" +userId);
 		return user ;
@@ -85,10 +85,10 @@ public class UserController {
 
 	// Update a user
 	@PutMapping("/user/{id}")
-	public Optional<Users> update(@PathVariable Long id,
-			@Valid @RequestBody Users userUpdt) {
+	public Optional<UserDetails> update(@PathVariable Long id,
+			@Valid @RequestBody UserDetails userUpdt) {
 		LOGGER.info("Executing updateUsers in UsersController");
-		Optional<Users> user = userService.fetchUserById(id);
+		Optional<UserDetails> user = userService.fetchUserDetailsById(id);
 		if (!user.isPresent())
 			throw new UserNotFoundException("id-" +id);
 		user.get().setName(userUpdt.getName());
@@ -102,7 +102,7 @@ public class UserController {
 	@DeleteMapping("/user/{id}")
 	public ResponseEntity<?> delete(@PathVariable(value = "id") Long id) {
 		LOGGER.info("Executing /user/{id} in UsersController");
-		return userService.deleteUser(id);
+		return userService.delete(id);
 	}
 
 	// Delete a user

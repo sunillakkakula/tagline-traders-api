@@ -1,7 +1,5 @@
 package com.vtt.apps.model;
 
-import java.util.Set;
-
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,7 +7,7 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -25,28 +23,35 @@ import lombok.Setter;
  */
 
 @Entity
-@Table(name = "category") // the name user can be ambiguous for postgresql main tables.
+@Table(name = "shipping_details") 
 @Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"}) 
-public class Category
+public class ShippingDetails
 {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@Column(name = "name")
-	private String name;
+	@Column(name = "address")
+	private String address;
 
-	@Column(name = "image_url")
-	private String imageurl;
+	@Column(name = "city")
+	private String city;
 
-	@OneToMany(mappedBy="category", fetch=FetchType.LAZY, orphanRemoval = true,cascade=
-		{CascadeType.REFRESH,CascadeType.DETACH,CascadeType.PERSIST,CascadeType.MERGE
-		})
-	private Set<SubCategory> subCategories;
+	@Column(name = "postal_code")
+	private String postalCode;
 
+	/*
+	 * @JoinColumn(name = "order_details_id") private OrderDetails orderDetails;
+	 */
 
+	/*
+	 * @OneToOne(mappedBy="shippingDetails", fetch=FetchType.LAZY, orphanRemoval =
+	 * true,optional = true,cascade=
+	 * {CascadeType.REFRESH,CascadeType.DETACH,CascadeType.PERSIST,CascadeType.MERGE
+	 * }) private OrderDetails orderDetails;
+	 */
 }

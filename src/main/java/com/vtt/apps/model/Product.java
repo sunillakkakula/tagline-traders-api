@@ -12,6 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -61,7 +62,16 @@ public class Product
 
 	@Column(name = "taxPercent")
 	private Float taxPercent;
-
+	
+	@Column(name = "order_type")
+	private String orderType;
+	
+	@OneToOne(mappedBy="product", fetch=FetchType.LAZY, orphanRemoval = true,cascade=
+		{CascadeType.REFRESH,CascadeType.DETACH,CascadeType.PERSIST,CascadeType.MERGE
+		})
+	@Column(name = "cart_item_id")
+	private CartItem cartItem;
+	
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
 	@JoinColumn(name = "sub_category_id", nullable = false)
 	@JsonIgnore
