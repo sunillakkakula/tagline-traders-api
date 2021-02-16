@@ -40,16 +40,16 @@ public class AvailableInBulk
 	private String unitOfMessure;
 
 	@Column(name = "qty")
-	private String qty;
+	private Integer qty;
 
 	@Column(name = "unit_price")
-	private String unitPrice;
+	private Float unitPrice;
 
 	@Column(name = "selling_price")
-	private String sellingPrice;
+	private Float sellingPrice;
 
 	@Column(name = "mrp")
-	private String mrp;
+	private Float mrp;
 
 	@ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "product_id", nullable = false)

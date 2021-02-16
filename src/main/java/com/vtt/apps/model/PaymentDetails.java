@@ -48,5 +48,5 @@ public class PaymentDetails
 	
 	@OneToOne(cascade = {CascadeType.REFRESH,CascadeType.DETACH,CascadeType.PERSIST,CascadeType.MERGE})
 	@JoinColumn(name = "order_details_id")
-	private OrderDetails_BKP orderDetails;
+	private OrderDetails orderDetails;
 }

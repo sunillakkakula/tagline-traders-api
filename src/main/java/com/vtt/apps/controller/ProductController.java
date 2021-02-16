@@ -35,7 +35,7 @@ public class ProductController {
 	@Autowired
 	SubCategoryRepository subCategoryRepository;
 
-	// Get All Categories
+	/* Get All Products by Sub Category */
 	@GetMapping("/subcategory/{subCatId}/product")
 	public Set<Product> fetchProductsBySubCategoryId(@PathVariable Long subCatId) {
 		LOGGER.info("Executing fetchProductsBySubCategoryId in ProductController");
@@ -44,7 +44,18 @@ public class ProductController {
 		return productRepository.findBySubCategoryId(subCatId);
 
 	}
-
+	
+	/* Get Product by Sub Category ID and Product ID */
+	@GetMapping("/subcategory/{subCatId}/product/{productId}")
+	public Product fetchProductBySubCategoryIdAndProductId(@PathVariable Long subCatId, @PathVariable Long productId) {
+		LOGGER.info("Executing fetchProductBySubCategoryIdAndProductId in ProductController");
+		if(!subCategoryRepository.existsById(subCatId)) 
+			throw new ResourceNotFoundException("SubCategory","ID",subCatId);
+		if(!productRepository.existsById(productId)) 
+			throw new ResourceNotFoundException("Product","ID",productId);
+		return productRepository.findById(productId).get();
+	}
+	
 	/* Create a new Product */
 	@PostMapping("/subcategory/{subCatId}/product")
 	public Product create(@PathVariable Long subCatId,@Valid @RequestBody Product product ) {

@@ -1,8 +1,6 @@
 package com.vtt.apps.model;
 
 import java.io.Serializable;
-import java.sql.Date;
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -41,30 +39,9 @@ public class CartDetails implements Serializable {
 	@Column(name="id")
 	private Long id;
 	
-	@Column(name="order_cost")
-	private float orderCost;
-	
-	@Column(name="payment_type")
-	private String paymentType;
-	
-	@Column(name="payment_status")
-	private String paymentStatus;
-	
-	@Column(name="order_status")
-	private String orderStatus;
-	
-	@Column(name="order_date")
-	private Date orderDate;
-	
-	@Column(name="delivery_date")
-	private Date deliveryDate;
-	
-	@Column(name="consumer_id")
-	private Long consumerId;
-	
 	@JsonIgnore
 	@OneToMany(fetch=FetchType.LAZY,
-			cascade= {CascadeType.REFRESH,CascadeType.DETACH,CascadeType.PERSIST,CascadeType.MERGE},mappedBy="cartDetails")
+	cascade= {CascadeType.REFRESH,CascadeType.DETACH,CascadeType.PERSIST,CascadeType.MERGE},mappedBy="cartDetails")
 	private List<CartItem> cartItems;
 
 }

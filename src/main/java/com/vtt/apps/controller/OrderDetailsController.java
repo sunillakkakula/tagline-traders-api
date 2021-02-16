@@ -1,9 +1,7 @@
 package com.vtt.apps.controller;
 
 import java.util.List;
-
 import javax.validation.Valid;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,9 +13,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.vtt.apps.exception.ResourceNotFoundException;
-import com.vtt.apps.model.OrderDetails_BKP;
+import com.vtt.apps.model.OrderDetails;
 import com.vtt.apps.repository.OrderDetailsRepository;
 
 @RestController
@@ -32,7 +29,7 @@ public class OrderDetailsController {
 
 	/* Get Order By ID */
 	@GetMapping("/order/{orderId}")
-	public OrderDetails_BKP fetchOrderById(@PathVariable Long orderId) {
+	public OrderDetails fetchOrderById(@PathVariable Long orderId) {
 		LOGGER.info("Executing fetchOrderById in OrderDetailsController");
 		if (!orderDetailsRepository.existsById(orderId))
 			throw new ResourceNotFoundException("OrderDetails", "ID", orderId);
@@ -42,7 +39,7 @@ public class OrderDetailsController {
 
 	/* Get All Orders*/
 	@GetMapping("/order")
-	public List<OrderDetails_BKP> fetchAllOrders() {
+	public List<OrderDetails> fetchAllOrders() {
 		LOGGER.info("Executing fetchAllOrders in OrderDetailsController");
 		return orderDetailsRepository.findAll();
 
@@ -60,7 +57,7 @@ public class OrderDetailsController {
 
 	/* Create a new Order */
 	@PostMapping("/order") 
-	public OrderDetails_BKP create(@Valid @RequestBody OrderDetails_BKP orderDetails) {
+	public OrderDetails create(@Valid @RequestBody OrderDetails orderDetails) {
 		LOGGER.info("Executing create in ProductController create : "+orderDetails );
 		return orderDetailsRepository.save(orderDetails); 
 	}

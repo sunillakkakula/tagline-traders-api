@@ -9,7 +9,8 @@ import com.vtt.apps.model.UserDetails;
 
 
 @Repository
-public interface UserRepository extends JpaRepository<UserDetails, Long> {
+public interface UserDetailsRepository extends JpaRepository<UserDetails, Long> {
 	public Optional<String> findUserRoleById(Long id);
-	public Optional<UserDetails> findByUsername(String userName);
+	public Optional<UserDetails> findByUserName(String userName);
+//	public Optional<UserDetails> findById(Long id);
 }

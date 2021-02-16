@@ -40,14 +40,40 @@ public class CartItem implements Serializable {
 	private Long id;
 	@Column(name="name")
 	private String name;
-	@Column(name="description")
+
+	@Column(name = "imageurl")
+	private String imageurl;
+
+	@Column(name = "brand")
+	private String brand;
+
+	@Column(name = "description")
 	private String description;
-	@Column(name="unit_cost")
-	private Integer unitCost;
-	@Column(name="quantity_ordered")
-	private Integer quantityOrdered;
-	@Column(name="total_cost")
-	private Float totalCost;
+
+	@Column(name = "isTaxable")
+	private Boolean isTaxable;
+
+	@Column(name = "taxPercent")
+	private Float taxPercent;
+	
+	@Column(name = "order_type")
+	private String orderType;
+	
+	@Column(name = "selected_uom")
+	private String selectedUom;
+
+	@Column(name = "qty")
+	private Integer qty;
+
+	@Column(name = "unit_price")
+	private Float unitPrice;
+
+	@Column(name = "selling_price")
+	private Float sellingPrice;
+
+	@Column(name = "mrp")
+	private Float mrp;
+	
 	
 	@JsonIgnore	
 	@ManyToOne(cascade= {CascadeType.PERSIST, CascadeType.MERGE,
