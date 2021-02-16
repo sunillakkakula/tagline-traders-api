@@ -3,6 +3,9 @@ package com.vtt.apps.controller;
 import static com.vtt.apps.util.ProductToCartItemConverter.convert;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -66,24 +69,19 @@ public class CartDetailsController {
 		cartItemRepository.deleteAll();
 	}
 	
-	/* Fetch All Cart Items By USer ID */
+	/* Delete Cart Items By USer ID and Item ID*/
 	@DeleteMapping("/cart-items/{userId}/remove-item/{itemId}")
-	public void deleteCartItem(@PathVariable Long userId , @PathVariable Long itemId ) {
+	public String deleteCartItem(@PathVariable Long userId , @PathVariable Long itemId ) {
 		LOGGER.info("Executing deleteCartItem in CartDetailsController ");
-		UserDetails userDetails = null;
-		CartDetails cartDetails = null;
-		List<CartItem> cartItems = null;
 		if(!userDetailsRepository.existsById(userId)) 
 			throw new ResourceNotFoundException("User Details ","ID",userId);
-		userDetails = userDetailsRepository.findById(userId).get();
-		
-		cartDetails = userDetails.getCartDetails();
-		cartItems = cartDetails .getCartItems();
-		cartItemRepository.deleteAll();
-//		cartItems.parallelStream().map(item->cartItemRepository.delete(item));
-//		return cartDetails .getCartItems();
-	}
-	
+		return cartItemRepository.findById(itemId) .map(cartItem -> {
+			cartItemRepository.delete(cartItem);
+			System.err.println("SUCCESSFULLY DELETED A CART ITEM "+itemId+" , Find All Remaining:--> "+cartItemRepository.findAll());
+			return "Deleted Successfully!";
+		}).orElseThrow(() -> new
+				ResourceNotFoundException("Cart Item ","Id ",itemId)); }
+
 	
 	/* Add a Product to Cart */
 	@PostMapping("/cart/{userId}/{productId}")
@@ -93,6 +91,7 @@ public class CartDetailsController {
 		CartDetails cartDetails = null;
 		List<CartItem> cartItems= null;
 		Product product = null;
+	
 		/*cartDetailsRepository.save
 		1.Convert Product to CartItem
 		2.Fetch the User Details
