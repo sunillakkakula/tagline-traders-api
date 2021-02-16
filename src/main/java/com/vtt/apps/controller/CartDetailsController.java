@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
+import javax.validation.Valid;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +16,8 @@ import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -83,6 +87,25 @@ public class CartDetailsController {
 				ResourceNotFoundException("Cart Item ","Id ",itemId)); }
 
 	
+	/* Update Cart Item from the Cart */
+	@PutMapping("/cart-items/{userId}/update-item/{itemId}") 
+	public CartItem update(@PathVariable Long userId,@PathVariable Long itemId,@RequestParam String qty,@RequestParam String orderType,@RequestParam String uomSelected) {
+		LOGGER.info("Executing update in CartDetailsController ");
+		if(!userDetailsRepository.existsById(userId)) 
+			throw new ResourceNotFoundException("User Details ","ID",userId);
+		if(!cartItemRepository.existsById(itemId)) { throw new
+			ResourceNotFoundException("CartItem ","ID" ,itemId); }
+
+		return cartItemRepository.findById(itemId) .map(cartItem -> {
+			cartItem.setOrderType(orderType);
+			cartItem.setQty(Integer.valueOf(qty));
+			cartItem.setSelectedUom(uomSelected);
+			
+			return cartItemRepository.save(cartItem); })
+				.orElseThrow(() -> new ResourceNotFoundException("CartItem","itemID ",itemId)); 
+		}
+	
+	
 	/* Add a Product to Cart */
 	@PostMapping("/cart/{userId}/{productId}")
 	public CartDetails create(@PathVariable Long userId ,@PathVariable Long productId ,@RequestParam String qty,@RequestParam String orderType,@RequestParam String uomSelected) {
@@ -123,6 +146,7 @@ public class CartDetailsController {
 		cartDetails.setCartItems(cartItems);
 		return cartDetailsRepository.save(cartDetails);
 	}
+	
 }
 
 
