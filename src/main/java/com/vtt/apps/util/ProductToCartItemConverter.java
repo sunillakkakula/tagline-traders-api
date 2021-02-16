@@ -6,13 +6,12 @@ import com.vtt.apps.model.CartItem;
 import com.vtt.apps.model.Product;
 
 public class ProductToCartItemConverter {
-	public static CartItem convert(Product product) {
+	public static CartItem convert(Product product,String qty,String orderType,String selectedUOM) {
 		CartItem cartItem = null;
 		/*
 		 * String orderType = null; String selectedUom = null; Float unitPrice = null;
 		 * Float mrp = null; Float sellingPrice = null;
 		 */
-		String orderType = null; 
 		AvailableInBulk availableInBulk = null;
 		AvailableInDomestic availableInDomestic= null;
 		if(product!=null)
@@ -24,24 +23,21 @@ public class ProductToCartItemConverter {
 			cartItem.setImageurl(product.getImageurl());
 			cartItem.setIsTaxable(product.getIsTaxable());
 			cartItem.setTaxPercent(product.getTaxPercent());
-			cartItem.setOrderType(product.getOrderType());
-			cartItem.setSelectedUom(product.getSelectedUom());
-			orderType = product.getOrderType();
-			
+			cartItem.setSelectedUom(selectedUOM);
+			cartItem.setOrderType(orderType);
+			cartItem.setQty(Integer.parseInt(qty));
 			
 			if(orderType.equalsIgnoreCase("bulk")) {
-				availableInBulk = product.getAvailableInBulk().stream().filter(eachItem->product.getSelectedUom().equalsIgnoreCase(eachItem.getUnitOfMessure())).findFirst().get();
+				availableInBulk = product.getAvailableInBulk().stream().filter(eachItem->eachItem.getUnitOfMessure().equalsIgnoreCase(selectedUOM)).findFirst().get();
 				cartItem.setMrp(availableInBulk.getMrp());
 				cartItem.setSellingPrice(availableInBulk.getSellingPrice());
 				cartItem.setUnitPrice(availableInBulk.getUnitPrice());
-				cartItem.setQty(availableInBulk.getQty());
 			}
 			else if(orderType.equalsIgnoreCase("domestic")) {
-				availableInDomestic = product.getAvailableInDomestic().stream().filter(eachItem->product.getSelectedUom().equalsIgnoreCase(eachItem.getUnitOfMessure())).findFirst().get();
+				availableInDomestic = product.getAvailableInDomestic().stream().filter(eachItem->eachItem.getUnitOfMessure().equalsIgnoreCase(selectedUOM)).findFirst().get();
 				cartItem.setMrp(availableInDomestic.getMrp());
 				cartItem.setSellingPrice(availableInDomestic.getSellingPrice());
 				cartItem.setUnitPrice(availableInDomestic.getUnitPrice());
-				cartItem.setQty(availableInDomestic.getQty());
 			}
 		}
 		return cartItem;
