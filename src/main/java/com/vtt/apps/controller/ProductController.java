@@ -56,6 +56,16 @@ public class ProductController {
 		return productRepository.findById(productId).get();
 	}
 	
+	/* Get Product by Product ID */
+	@GetMapping("/product/{productId}")
+	public Product fetchProductById(@PathVariable Long productId) {
+		LOGGER.info("Executing fetchProductById in ProductController");
+		
+		if(!productRepository.existsById(productId)) 
+			throw new ResourceNotFoundException("Product","ID",productId);
+		return productRepository.findById(productId).get();
+	}
+	
 	/* Create a new Product */
 	@PostMapping("/subcategory/{subCatId}/product")
 	public Product create(@PathVariable Long subCatId,@Valid @RequestBody Product product ) {
