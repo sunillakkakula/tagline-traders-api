@@ -52,10 +52,7 @@ public class OrderItem implements Serializable {
 	@Column(name="total_cost")
 	private Float totalCost;
 
-	/*
-	 * @ManyToOne(fetch = FetchType.LAZY) private OrderDetails orderDetails;
-	 */
-	 @JsonIgnore
+	@JsonIgnore
 	@ManyToOne(fetch = FetchType.LAZY)
 	private OrderDetails orderDetails;
 

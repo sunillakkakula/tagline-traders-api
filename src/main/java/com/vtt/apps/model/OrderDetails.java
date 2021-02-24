@@ -69,19 +69,21 @@ public class OrderDetails implements Serializable {
 	@Column(name="is_active")
 	private Boolean isActive;
 
+
+//	@JsonIgnore
+	@ManyToOne(fetch = FetchType.LAZY)
+	private ShippingDetails shippingDetails;
+	
 	/*
-	 * @OneToMany(fetch=FetchType.LAZY, cascade=
-	 * {CascadeType.REFRESH,CascadeType.DETACH,CascadeType.PERSIST,CascadeType.MERGE
-	 * },mappedBy="orderDetails") private List<OrderItem> orderItems;
+	 * @ManyToOne(fetch = FetchType.LAZY, optional = true)
+	 * 
+	 * @JoinColumn(name = "shipping_details_id", nullable = true)
+	 * 
+	 * @JsonIgnore private ShippingDetails shippingDetails ;
 	 */
-
-	@ManyToOne(fetch = FetchType.LAZY, optional = true)
-	@JoinColumn(name = "shipping_details_id", nullable = true)
-	@JsonIgnore
-	private ShippingDetails shippingDetails ;
-
 	@Column(name="user_id")
 	private Long userId;
+	
 	@OneToMany(mappedBy="orderDetails",cascade = CascadeType.ALL,orphanRemoval = true)
 	private Set<OrderItem> orderItems;
 

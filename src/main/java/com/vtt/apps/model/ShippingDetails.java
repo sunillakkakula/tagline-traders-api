@@ -1,5 +1,6 @@
 package com.vtt.apps.model;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -10,7 +11,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -47,8 +47,27 @@ public class ShippingDetails
 	@Column(name = "postal_code")
 	private String postalCode;
 
-	@OneToMany(mappedBy="shippingDetails", fetch=FetchType.LAZY, orphanRemoval = true,cascade=
+	/*
+	 * @OneToMany(mappedBy="shippingDetails", fetch=FetchType.LAZY, orphanRemoval =
+	 * true,cascade=
+	 * {CascadeType.REFRESH,CascadeType.DETACH,CascadeType.PERSIST,CascadeType.MERGE
+	 * }) private Set<OrderDetails> orderDetails;
+	 */
+	@OneToMany(mappedBy="shippingDetails", fetch=FetchType.LAZY, orphanRemoval =
+			true,cascade=
 		{CascadeType.REFRESH,CascadeType.DETACH,CascadeType.PERSIST,CascadeType.MERGE
-		})
+		}) 
 	private Set<OrderDetails> orderDetails;
+
+	public void addOrderDetails(OrderDetails order) {
+		if(orderDetails==null)
+			orderDetails = new HashSet<>();
+		orderDetails.add(order);
+		order.setShippingDetails(this); 
+	}
+
+	public void removeOrderItem(OrderDetails order) {
+		orderDetails.remove(order); 
+		order.setShippingDetails(null); 
+	}
 }
