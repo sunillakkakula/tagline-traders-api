@@ -1,5 +1,6 @@
 package com.vtt.apps.controller;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 import javax.validation.Valid;
@@ -88,14 +89,6 @@ public class OrderDetailsController {
 		if (!userDetailsRepository.existsById(userId))
 			throw new ResourceNotFoundException("User ", "ID", userId);
 		UserDetails user = userDetailsRepository.findById(userId).get();
-//		 orderDetails.setOrderItems(orderDetails.getOrderItems());
-
-		/*
-		 * return categoryRepository.findById(catId) .map(category -> {
-		 * subCategory.setCategory(category); return
-		 * subCategoryRepository.save(subCategory); }).orElseThrow(() -> new
-		 * ResourceNotFoundException("Category ","catId ",catId));
-		 */
 		OrderDetails newOrder = new OrderDetails();
 		newOrder.setOrderCost(orderDetails.getOrderCost());
 		newOrder.setDeliveryDate(orderDetails.getDeliveryDate());
@@ -104,6 +97,11 @@ public class OrderDetailsController {
 		newOrder.setPaymentType(orderDetails.getPaymentType());
 		newOrder.setUserId(userId);
 		ShippingDetails newShippingDetails = shippingDetailsRepository.save(orderDetails.getShippingDetails());
+		PaymentDetails payDetails = orderDetails.getPaymentDetails();
+		payDetails.setPaymentDateTime(LocalDateTime.now());
+		payDetails.setPaymentDate(LocalDateTime.now().toLocalDate());
+		payDetails.setPaymentTime(LocalDateTime.now().toLocalTime());
+		
 		PaymentDetails newPaymentDetails = paymentDetailsRepository.save(orderDetails.getPaymentDetails());
 		newOrder.setShippingDetails(newShippingDetails);
 		newOrder.setPaymentDetails(newPaymentDetails);
@@ -112,46 +110,11 @@ public class OrderDetailsController {
 		
 		for(OrderItem orderItem :orderDetails.getOrderItems()) {
 			createdOrder.addOrderItem(orderItem);
-//			orderItemRepository.save(orderItem); 
-			System.err.println("Adding Order Item : "+orderItem);
 		}
 		orderDetailsRepository.save(createdOrder);
 		
-		/*
-		 * for(OrderItem orderItem :orderDetails.getOrderItems()) {
-		 * System.err.println("Adding Order Item : "+orderItem);
-		 * orderDetails.addOrderItem(orderItem ); }
-		 * 
-		 * OrderDetails newOrderDetails = new OrderDetails(); for(OrderItem orderItem
-		 * :orderDetails.getOrderItems()) {
-		 * System.err.println("Adding Order Item : "+orderItem);
-		 * newOrderDetails.addOrderItem(orderItem ); }
-		 */
-
-//		OrderDetails createdOrder = orderDetailsRepository.save(orderDetails);
-//		userDetailsRepository.save(user);
 		return createdOrder;
 	}
 
-	/*
-	 * @PutMapping("/subcategory/{subCatId}/product/{productId}") public Product
-	 * update(@PathVariable Long subCatId,@PathVariable Long
-	 * productId,@Valid @RequestBody Product updatedProduct) {
-	 * 
-	 * if(!subCategoryRepository.existsById(subCatId)) { throw new
-	 * ResourceNotFoundException("Sub Category ","ID" ,subCatId); }
-	 * 
-	 * return orderDetailsRepository.findById(productId) .map(product -> {
-	 * product.setName(updatedProduct.getName());
-	 * product.setImageurl(updatedProduct.getImageurl());
-	 * product.setBrand(updatedProduct.getBrand());
-	 * product.setDescription(updatedProduct.getDescription());
-	 * product.setCountInStock(updatedProduct.getCountInStock());
-	 * product.setIsTaxable(updatedProduct.getIsTaxable());
-	 * product.setTaxPercent(updatedProduct.getTaxPercent());
-	 * 
-	 * return orderDetailsRepository.save(product); }) .orElseThrow(() -> new
-	 * ResourceNotFoundException("Product","productID ",productId)); }
-	 */
 
 }

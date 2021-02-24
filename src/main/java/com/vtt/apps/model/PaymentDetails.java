@@ -1,6 +1,8 @@
 package com.vtt.apps.model;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -11,9 +13,7 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -47,9 +47,18 @@ public class PaymentDetails
 	@Column(name = "status")
 	private String status;
 	
-	@Column(name = "payment_date")
-	private LocalDateTime paymentDate;
+	/*@Column(name = "payment_date")
+	private LocalDateTime paymentDate;*/
 	
+	
+	@Column(name = "payment_time", columnDefinition = "TIME")
+	private LocalTime paymentTime;
+
+	@Column(name = "payment_date", columnDefinition = "DATE")
+	private LocalDate paymentDate;
+
+	@Column(name = "payment_date_time", columnDefinition = "TIMESTAMP")
+	private LocalDateTime paymentDateTime;
 	/*
 	 * @OneToOne(cascade =
 	 * {CascadeType.REFRESH,CascadeType.DETACH,CascadeType.PERSIST,CascadeType.MERGE
