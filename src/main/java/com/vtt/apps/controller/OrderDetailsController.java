@@ -19,10 +19,12 @@ import org.springframework.web.bind.annotation.RestController;
 import com.vtt.apps.exception.ResourceNotFoundException;
 import com.vtt.apps.model.OrderDetails;
 import com.vtt.apps.model.OrderItem;
+import com.vtt.apps.model.PaymentDetails;
 import com.vtt.apps.model.ShippingDetails;
 import com.vtt.apps.model.UserDetails;
 import com.vtt.apps.repository.OrderDetailsRepository;
 import com.vtt.apps.repository.OrderItemRepository;
+import com.vtt.apps.repository.PaymentDetailsRepository;
 import com.vtt.apps.repository.ShippingDetailsRepository;
 import com.vtt.apps.repository.UserDetailsRepository;
 
@@ -41,6 +43,9 @@ public class OrderDetailsController {
 	
 	@Autowired
 	ShippingDetailsRepository shippingDetailsRepository;
+	
+	@Autowired
+	PaymentDetailsRepository paymentDetailsRepository;
 	
 	@Autowired
 	UserDetailsRepository userDetailsRepository;
@@ -99,7 +104,9 @@ public class OrderDetailsController {
 		newOrder.setPaymentType(orderDetails.getPaymentType());
 		newOrder.setUserId(userId);
 		ShippingDetails newShippingDetails = shippingDetailsRepository.save(orderDetails.getShippingDetails());
+		PaymentDetails newPaymentDetails = paymentDetailsRepository.save(orderDetails.getPaymentDetails());
 		newOrder.setShippingDetails(newShippingDetails);
+		newOrder.setPaymentDetails(newPaymentDetails);
 		OrderDetails createdOrder = orderDetailsRepository.save(newOrder);
 		
 		

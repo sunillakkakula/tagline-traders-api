@@ -74,6 +74,9 @@ public class OrderDetails implements Serializable {
 	@ManyToOne(fetch = FetchType.LAZY)
 	private ShippingDetails shippingDetails;
 	
+	@ManyToOne(fetch = FetchType.LAZY)
+	private PaymentDetails paymentDetails;
+	
 	/*
 	 * @ManyToOne(fetch = FetchType.LAZY, optional = true)
 	 * 

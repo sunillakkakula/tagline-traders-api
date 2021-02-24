@@ -47,12 +47,6 @@ public class ShippingDetails
 	@Column(name = "postal_code")
 	private String postalCode;
 
-	/*
-	 * @OneToMany(mappedBy="shippingDetails", fetch=FetchType.LAZY, orphanRemoval =
-	 * true,cascade=
-	 * {CascadeType.REFRESH,CascadeType.DETACH,CascadeType.PERSIST,CascadeType.MERGE
-	 * }) private Set<OrderDetails> orderDetails;
-	 */
 	@OneToMany(mappedBy="shippingDetails", fetch=FetchType.LAZY, orphanRemoval =
 			true,cascade=
 		{CascadeType.REFRESH,CascadeType.DETACH,CascadeType.PERSIST,CascadeType.MERGE
