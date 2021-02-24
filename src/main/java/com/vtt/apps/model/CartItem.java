@@ -55,10 +55,10 @@ public class CartItem implements Serializable {
 
 	@Column(name = "taxPercent")
 	private Float taxPercent;
-	
+
 	@Column(name = "order_type")
 	private String orderType;
-	
+
 	@Column(name = "selected_uom")
 	private String selectedUom;
 
@@ -73,12 +73,21 @@ public class CartItem implements Serializable {
 
 	@Column(name = "mrp")
 	private Float mrp;
-	
-	
-	@JsonIgnore	
-	@ManyToOne(cascade= {CascadeType.PERSIST, CascadeType.MERGE,
-			CascadeType.DETACH, CascadeType.REFRESH},fetch= FetchType.LAZY)
-	@JoinColumn(name="cart_details_id", nullable = false)
+
+
+	/*
+	 * @JsonIgnore
+	 * 
+	 * @ManyToOne(cascade= {CascadeType.PERSIST, CascadeType.MERGE,
+	 * CascadeType.DETACH, CascadeType.REFRESH},fetch= FetchType.LAZY)
+	 * 
+	 * @JoinColumn(name="cart_details_id", nullable = false) private CartDetails
+	 * cartDetails;
+	 */
+
+	@ManyToOne(fetch = FetchType.LAZY, optional = false)
+	@JoinColumn(name = "cart_details_id", nullable = false)
+	@JsonIgnore
 	private CartDetails cartDetails;
 
 }

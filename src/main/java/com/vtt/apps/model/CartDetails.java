@@ -2,6 +2,7 @@ package com.vtt.apps.model;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -39,9 +40,18 @@ public class CartDetails implements Serializable {
 	@Column(name="id")
 	private Long id;
 	
-	@JsonIgnore
-	@OneToMany(fetch=FetchType.LAZY,
-	cascade= {CascadeType.REFRESH,CascadeType.DETACH,CascadeType.PERSIST,CascadeType.MERGE},mappedBy="cartDetails")
-	private List<CartItem> cartItems;
+	
+	/*
+	 * @JsonIgnore
+	 * 
+	 * @OneToMany(fetch=FetchType.LAZY, cascade=
+	 * {CascadeType.REFRESH,CascadeType.DETACH,CascadeType.PERSIST,CascadeType.MERGE
+	 * },mappedBy="cartDetails") private List<CartItem> cartItems;
+	 */
+	
+	@OneToMany(mappedBy="cartDetails", fetch=FetchType.LAZY, orphanRemoval = true,cascade=
+		{CascadeType.REFRESH,CascadeType.DETACH,CascadeType.PERSIST,CascadeType.MERGE
+		})
+	private Set<CartItem> cartItems;
 
 }

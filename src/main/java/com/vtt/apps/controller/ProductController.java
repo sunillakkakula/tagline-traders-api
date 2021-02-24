@@ -18,7 +18,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.vtt.apps.exception.ResourceNotFoundException;
+import com.vtt.apps.model.Category;
 import com.vtt.apps.model.Product;
+import com.vtt.apps.repository.CategoryRepository;
 import com.vtt.apps.repository.ProductRepository;
 import com.vtt.apps.repository.SubCategoryRepository;
 
@@ -34,7 +36,28 @@ public class ProductController {
 
 	@Autowired
 	SubCategoryRepository subCategoryRepository;
+	
+	@Autowired
+	CategoryRepository categoryRepository;
 
+	
+	/* Get All Products by Category */
+	@GetMapping("/category/{catId}/product")
+	public Category fetchProductsByCategoryId(@PathVariable Long catId) {
+		LOGGER.info("Executing fetchProductsByCategoryId in ProductController");
+		if(!categoryRepository.existsById(catId)) 
+			throw new ResourceNotFoundException("Category","ID",catId);
+		return categoryRepository.findById(catId).get();
+
+	}
+	
+	/* Get VTT Best Seller Products */
+	@GetMapping("/product/best-seller")
+	public Set<Product>  fetchBestSellerVttProducts() {
+		LOGGER.info("Executing fetchBestSellerVttProducts in ProductController");
+		return productRepository.findByIsVttBestSeller(true);
+	}
+	
 	/* Get All Products by Sub Category */
 	@GetMapping("/subcategory/{subCatId}/product")
 	public Set<Product> fetchProductsBySubCategoryId(@PathVariable Long subCatId) {

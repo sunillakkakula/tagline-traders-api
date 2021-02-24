@@ -14,4 +14,5 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 	public Optional<Product> findById(Long id);
 	public Optional<Product> findByName(String name);
 	public Set<Product> findBySubCategoryId(Long subCategoryId); 
+	public Set<Product> findByIsVttBestSeller(Boolean flag);
 }

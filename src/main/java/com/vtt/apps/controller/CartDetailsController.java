@@ -1,12 +1,10 @@
 package com.vtt.apps.controller;
 
 import static com.vtt.apps.util.ProductToCartItemConverter.convert;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
 
-import javax.validation.Valid;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,10 +15,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
 import com.vtt.apps.exception.ResourceNotFoundException;
 import com.vtt.apps.model.CartDetails;
 import com.vtt.apps.model.CartItem;
@@ -52,7 +50,7 @@ public class CartDetailsController {
 	
 	/* Fetch All Cart Items By USer ID */ 
 	@GetMapping("/cart-items/{userId}")
-	public List<CartItem> fetchAllCartItems(@PathVariable Long userId ) {
+	public Set<CartItem> fetchAllCartItems(@PathVariable Long userId ) {
 		LOGGER.info("Executing getchAllCartItems in CartDetailsController ");
 		UserDetails userDetails = null;
 		CartDetails cartDetails = null;
@@ -112,7 +110,7 @@ public class CartDetailsController {
 		CartItem cartItem = null;
 		UserDetails userDetails = null;
 		CartDetails cartDetails = null;
-		List<CartItem> cartItems= null;
+		Set<CartItem> cartItems= null;
 		Product product = null;
 	
 		/*cartDetailsRepository.save
@@ -139,7 +137,7 @@ public class CartDetailsController {
 		CartItem cartItemCreated  = cartItemRepository.save(cartItem);
 		
 		if(cartDetails .getCartItems()==null) 
-			cartItems = new ArrayList<CartItem>();
+			cartItems = new HashSet<CartItem>();
 		else
 			cartItems = cartDetails .getCartItems();
 		cartItems.add(cartItemCreated);

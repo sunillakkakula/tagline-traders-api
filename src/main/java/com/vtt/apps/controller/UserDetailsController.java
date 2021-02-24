@@ -62,7 +62,7 @@ public class UserDetailsController {
 			LOGGER.info(" UserDetails :--> "+tempUser);
 		}
 		if (!tempUser.isPresent())
-			throw new UserNotFoundException("id-" +user.getName());
+			throw new UserNotFoundException("Invalid User Name and Password" );
 		return tempUser;
 	}
 
@@ -80,6 +80,20 @@ public class UserDetailsController {
 	}
 
 
+	/* Get a Single user by ID */
+	@GetMapping("/user/profile/{id}")
+	public Optional<UserDetails> getUserProfileById(@PathVariable(value = "id") Long userId) {
+		LOGGER.info("Executing getUserProfileById in UsersController");
+		Optional<UserDetails> result = null;
+		result = userDetailsRepository.findById(userId);
+		if(result.isPresent()) {
+			return result;
+		}else {
+			throw new ResourceNotFoundException("User Details" ,"ID", userId);
+		}
+	}
+
+	
 	/* Update a user */
 	@PutMapping("/user/{id}")
 	public UserDetails update(@PathVariable Long id,

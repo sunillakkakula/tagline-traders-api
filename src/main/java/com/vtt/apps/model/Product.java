@@ -69,6 +69,8 @@ public class Product
 	@Column(name = "selected_uom")
 	private String selectedUom;
 	
+	@Column(name = "is_vtt_best_seller")
+	private Boolean isVttBestSeller;
 	
 	/*
 	 * @OneToOne(mappedBy="product", fetch=FetchType.LAZY, orphanRemoval =

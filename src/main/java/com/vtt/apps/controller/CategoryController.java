@@ -18,7 +18,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.vtt.apps.exception.CategoryNotFoundException;
 import com.vtt.apps.exception.ResourceNotFoundException;
 import com.vtt.apps.model.Category;
 import com.vtt.apps.repository.CategoryRepository;
