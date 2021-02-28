@@ -41,13 +41,13 @@ public class OrderDetailsController {
 
 	@Autowired
 	OrderItemRepository orderItemRepository;
-	
+
 	@Autowired
 	ShippingDetailsRepository shippingDetailsRepository;
-	
+
 	@Autowired
 	PaymentDetailsRepository paymentDetailsRepository;
-	
+
 	@Autowired
 	UserDetailsRepository userDetailsRepository;
 
@@ -90,7 +90,11 @@ public class OrderDetailsController {
 			throw new ResourceNotFoundException("User ", "ID", userId);
 		UserDetails user = userDetailsRepository.findById(userId).get();
 		OrderDetails newOrder = new OrderDetails();
-		newOrder.setOrderCost(orderDetails.getOrderCost());
+		newOrder.setItemsPrice(orderDetails.getItemsPrice());
+		newOrder.setTaxPrice(orderDetails.getTaxPrice());
+		newOrder.setShippingPrice(orderDetails.getShippingPrice());
+		newOrder.setTotalPrice(orderDetails.getTotalPrice());
+		
 		newOrder.setDeliveryDate(orderDetails.getDeliveryDate());
 		newOrder.setOrderStatus(orderDetails.getOrderStatus());
 		newOrder.setPaymentStatus(orderDetails.getPaymentStatus());
@@ -101,18 +105,19 @@ public class OrderDetailsController {
 		payDetails.setPaymentDateTime(LocalDateTime.now());
 		payDetails.setPaymentDate(LocalDateTime.now().toLocalDate());
 		payDetails.setPaymentTime(LocalDateTime.now().toLocalTime());
-		
+
 		PaymentDetails newPaymentDetails = paymentDetailsRepository.save(orderDetails.getPaymentDetails());
 		newOrder.setShippingDetails(newShippingDetails);
 		newOrder.setPaymentDetails(newPaymentDetails);
 		OrderDetails createdOrder = orderDetailsRepository.save(newOrder);
-		
-		
-		for(OrderItem orderItem :orderDetails.getOrderItems()) {
-			createdOrder.addOrderItem(orderItem);
-		}
+
+		if(orderDetails.getOrderItems()!=null && orderDetails.getOrderItems().size()>0)
+			for(OrderItem orderItem :orderDetails.getOrderItems()) {
+				System.err.println("orderItem :-> "+orderItem);
+				createdOrder.addOrderItem(orderItem);
+			}
 		orderDetailsRepository.save(createdOrder);
-		
+
 		return createdOrder;
 	}
 

@@ -110,7 +110,7 @@ public class ProductController {
 
 		return productRepository.findById(productId) .map(product -> {
 			product.setName(updatedProduct.getName());
-			product.setImageurl(updatedProduct.getImageurl());
+			product.setImageUrl(updatedProduct.getImageUrl());
 			product.setBrand(updatedProduct.getBrand());
 			product.setDescription(updatedProduct.getDescription()); 
 			product.setCountInStock(updatedProduct.getCountInStock());

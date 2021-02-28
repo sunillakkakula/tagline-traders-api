@@ -20,7 +20,7 @@ public class ProductToCartItemConverter {
 			cartItem.setName(product.getName());
 			cartItem.setBrand(product.getBrand());
 			cartItem.setDescription(product.getDescription());
-			cartItem.setImageurl(product.getImageurl());
+			cartItem.setImageUrl(product.getImageUrl());
 			cartItem.setIsTaxable(product.getIsTaxable());
 			cartItem.setTaxPercent(product.getTaxPercent());
 			cartItem.setSelectedUom(selectedUOM);

@@ -63,10 +63,10 @@ public class ShippingDetailsController {
 		LOGGER.info("Executing UPDATE /shipping-details/{id} in ShippingDetailsController");
 		return shippingDetailsRepository.findById(id)
 				.map(shippingDetails -> {
-					shippingDetails.setAddress(shippingDetailsUpdated.getAddress());
-					shippingDetails.setCity(shippingDetailsUpdated.getCity());
-					shippingDetails.setPostalCode(shippingDetailsUpdated.getPostalCode());
-					return shippingDetailsRepository.save(shippingDetails);
+//					shippingDetails.setAddress(shippingDetailsUpdated.getAddress());
+//					shippingDetails.setCity(shippingDetailsUpdated.getCity());
+//					shippingDetails.setPostalCode(shippingDetailsUpdated.getPostalCode());
+					return shippingDetailsRepository.save(shippingDetailsUpdated);
 				}).orElseThrow(() -> new ResourceNotFoundException("ShippingDetails","ID" , id));
 	}
 

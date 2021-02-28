@@ -13,6 +13,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.AllArgsConstructor;
@@ -28,7 +29,7 @@ import lombok.Setter;
 @Entity
 @Table(name = "shipping_details") 
 @Setter
-@Getter
+//@Getter
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"}) 
@@ -46,7 +47,7 @@ public class ShippingDetails
 
 	@Column(name = "postal_code")
 	private String postalCode;
-
+//@JsonIgnore
 	@OneToMany(mappedBy="shippingDetails", fetch=FetchType.LAZY, orphanRemoval =
 			true,cascade=
 		{CascadeType.REFRESH,CascadeType.DETACH,CascadeType.PERSIST,CascadeType.MERGE

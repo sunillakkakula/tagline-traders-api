@@ -43,14 +43,20 @@ public class OrderItem implements Serializable {
 	private Long id;
 	@Column(name="name")
 	private String name;
+	@Column(name="image_url")
+	private String imageUrl;
 	@Column(name="description")
 	private String description;
-	@Column(name="unit_cost")
-	private Integer unitCost;
+	@Column(name="unit_price")
+	private Float unitPrice;
 	@Column(name="quantity_ordered")
 	private Integer quantityOrdered;
-	@Column(name="total_cost")
-	private Float totalCost;
+	@Column(name="uom")
+	private String uom;
+	@Column(name="order_type")
+	private String orderType;
+	@Column(name="total_price")
+	private Float totalPrice;
 
 	@JsonIgnore
 	@ManyToOne(fetch = FetchType.LAZY)

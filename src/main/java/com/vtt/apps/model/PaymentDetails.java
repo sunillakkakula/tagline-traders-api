@@ -16,6 +16,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.AllArgsConstructor;
@@ -66,7 +67,7 @@ public class PaymentDetails
 	 * 
 	 * @JoinColumn(name = "order_details_id") private OrderDetails orderDetails;
 	 */
-	
+	@JsonIgnore
 	@OneToMany(mappedBy="paymentDetails", fetch=FetchType.LAZY, orphanRemoval =
 			true,cascade=
 		{CascadeType.REFRESH,CascadeType.DETACH,CascadeType.PERSIST,CascadeType.MERGE

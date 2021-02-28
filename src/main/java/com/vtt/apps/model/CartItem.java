@@ -41,8 +41,8 @@ public class CartItem implements Serializable {
 	@Column(name="name")
 	private String name;
 
-	@Column(name = "imageurl")
-	private String imageurl;
+	@Column(name = "image_url")
+	private String imageUrl;
 
 	@Column(name = "brand")
 	private String brand;
@@ -50,10 +50,10 @@ public class CartItem implements Serializable {
 	@Column(name = "description")
 	private String description;
 
-	@Column(name = "isTaxable")
+	@Column(name = "is_taxable")
 	private Boolean isTaxable;
 
-	@Column(name = "taxPercent")
+	@Column(name = "tax_percent")
 	private Float taxPercent;
 
 	@Column(name = "order_type")

@@ -48,9 +48,18 @@ public class OrderDetails implements Serializable {
 	@Column(name="id")
 	private Long id;
 
-	@Column(name="order_cost")
-	private float orderCost;
+	@Column(name="items_price")
+	private Float itemsPrice;
 
+	@Column(name="tax_price")
+	private Float taxPrice;
+	
+	@Column(name="shipping_price")
+	private Float shippingPrice;
+	
+	@Column(name="total_price")
+	private Float totalPrice;
+	
 	@Column(name="payment_type")
 	private String paymentType;
 
@@ -100,8 +109,4 @@ public class OrderDetails implements Serializable {
 	public void removeOrderItem(OrderItem orderItem) {
 		orderItems.remove(orderItem); orderItem.setOrderDetails(null); 
 	}
-
-
-
-
 }
