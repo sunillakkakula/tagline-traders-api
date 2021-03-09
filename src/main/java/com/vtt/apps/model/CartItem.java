@@ -41,8 +41,8 @@ public class CartItem implements Serializable {
 	@Column(name="name")
 	private String name;
 
-	@Column(name = "image_url")
-	private String imageUrl;
+	@Column(name = "imageurl")
+	private String imageurl;
 
 	@Column(name = "brand")
 	private String brand;
