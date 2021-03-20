@@ -1,0 +1,16 @@
+2021-03-12 06:52:43,016 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TaglineTradersApiApplication on LAPTOP-64GATL7J with PID 25060 (D:\Work\Vishudha\java-workspace\tagline-traders-api\target\classes started by sunil kumar in D:\Work\Vishudha\java-workspace\tagline-traders-api)
+2021-03-12 06:52:43,017 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.3.8.RELEASE, Spring v5.2.12.RELEASE
+2021-03-12 06:52:43,018 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 06:52:57,576 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TaglineTradersApiApplication on LAPTOP-64GATL7J with PID 26516 (D:\Work\Vishudha\java-workspace\tagline-traders-api\target\classes started by sunil kumar in D:\Work\Vishudha\java-workspace\tagline-traders-api)
+2021-03-12 06:52:57,579 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.3.8.RELEASE, Spring v5.2.12.RELEASE
+2021-03-12 06:52:57,580 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-12 06:53:16,386 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-12 06:53:17,036 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
+2021-03-12 06:53:17,036 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2021-03-12 06:53:17,037 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
+2021-03-12 06:53:19,777 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started TaglineTradersApiApplication in 22.615 seconds (JVM running for 23.762)
+2021-03-12 06:53:57,285 INFO com.vtt.apps.controller.HelloController [http-nio-8080-exec-1] INFO-wish
+2021-03-12 06:53:57,286 WARN com.vtt.apps.controller.HelloController [http-nio-8080-exec-1] WARN-wish
+2021-03-12 06:53:57,286 TRACE com.vtt.apps.controller.HelloController [http-nio-8080-exec-1] TRACE-wish
+2021-03-12 06:53:57,287 ERROR com.vtt.apps.controller.HelloController [http-nio-8080-exec-1] ERROR-wish
+2021-03-12 06:53:57,287 DEBUG com.vtt.apps.controller.HelloController [http-nio-8080-exec-1] DEBUG-wish

@@ -39,7 +39,8 @@ public class UserDetailsController {
 	CartDetailsRepository cartDetailsRepository ;
 	/*
 	 * Get All users
-	 */	@GetMapping("/user")
+	 */	
+	@GetMapping("/user")
 	public List<UserDetails> retrieveAll() {
 		LOGGER.info("Executing retrieveAll in UsersController");
 		return  userDetailsRepository.findAll();

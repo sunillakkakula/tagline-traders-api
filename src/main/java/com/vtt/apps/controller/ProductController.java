@@ -91,10 +91,10 @@ public class ProductController {
 	
 	/* Create a new Product */
 	@PostMapping("/subcategory/{subCatId}/product")
-	public Product create(@PathVariable Long subCatId,@Valid @RequestBody Product product ) {
+	public Product create(@PathVariable String subCatId,@Valid @RequestBody Product product ) {
 		LOGGER.info("Executing create in ProductController subcategory : "+product );
-
-		return subCategoryRepository.findById(subCatId)
+		
+		return subCategoryRepository.findById(Long.valueOf(subCatId))
 				.map(subCategory -> {
 					product.setSubCategory(subCategory);
 					return productRepository.save(product);

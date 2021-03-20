@@ -1,0 +1,53 @@
+2021-03-16 00:00:50,221 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-2] Executing create in ProductController subcategory : com.vtt.apps.model.Product@630168af
+2021-03-16 00:00:50,744 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-1] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:02:40,414 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-4] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:02:43,710 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-5] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:02:51,396 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-3] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:02:54,398 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-6] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:02:56,391 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-7] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:03:05,369 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-8] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:03:10,424 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-10] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:03:13,472 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-2] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:03:17,404 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-1] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:03:52,407 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-4] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:03:57,421 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-5] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:04:01,384 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-3] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:04:14,422 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-6] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:04:26,385 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-7] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:05:03,389 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-9] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:05:05,009 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-8] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:05:36,220 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-10] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:05:47,406 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-2] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:05:49,564 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-1] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:06:15,446 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-4] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:06:18,435 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-5] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:08:25,561 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-3] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:08:29,737 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-6] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:11:24,392 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-7] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:11:49,383 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-9] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:11:54,405 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-8] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:11:57,387 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-10] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:11:59,383 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-2] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 00:12:04,384 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-1] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 09:55:41,864 WARN sun.util.logging.internal.LoggingProviderImpl$JULWrapper [RMI TCP Connection(596)-127.0.0.1] The server has decided to close this client connection.
+2021-03-16 09:55:52,649 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h33m46s812ms734µs900ns).
+2021-03-16 11:03:12,744 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-4] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 12:40:01,340 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50m38s540ms950µs100ns).
+2021-03-16 15:21:35,396 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h2m3s788ms941µs800ns).
+2021-03-16 16:09:00,133 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-2] Executing fetchBestSellerVttProducts in ProductController
+2021-03-16 16:09:00,218 INFO com.vtt.apps.controller.CategoryController [http-nio-8080-exec-10] Executing retrieveAll in CategoryController
+2021-03-16 16:09:02,820 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-1] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 16:09:04,755 INFO com.vtt.apps.controller.CategoryController [http-nio-8080-exec-4] Executing retrieveAll in CategoryController
+2021-03-16 16:09:14,985 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-5] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 16:22:27,243 INFO com.vtt.apps.controller.CategoryController [http-nio-8080-exec-4] Executing retrieveAll in CategoryController
+2021-03-16 16:22:27,243 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-1] Executing fetchBestSellerVttProducts in ProductController
+2021-03-16 16:22:30,160 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-5] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 17:33:18,420 INFO com.vtt.apps.controller.UserDetailsController [http-nio-8080-exec-1] Executing validateUser in UsersController
+2021-03-16 17:33:18,474 INFO com.vtt.apps.controller.UserDetailsController [http-nio-8080-exec-1]  UserDetails :--> Optional[com.vtt.apps.model.UserDetails@3abc87af]
+2021-03-16 17:33:18,569 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-4] Executing fetchBestSellerVttProducts in ProductController
+2021-03-16 17:33:18,864 INFO com.vtt.apps.controller.CategoryController [http-nio-8080-exec-5] Executing retrieveAll in CategoryController
+2021-03-16 17:33:26,446 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-3] Executing fetchProductsBySubCategoryId in ProductController
+2021-03-16 18:48:46,948 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=46m41s147ms704µs900ns).
+2021-03-16 18:58:54,789 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-6] Executing fetchBestSellerVttProducts in ProductController
+2021-03-16 18:58:54,789 INFO com.vtt.apps.controller.CategoryController [http-nio-8080-exec-7] Executing retrieveAll in CategoryController
+2021-03-16 19:05:16,530 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-4] Executing fetchProductsBySubCategoryId in ProductController
