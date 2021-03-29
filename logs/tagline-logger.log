@@ -1,105 +1,389 @@
-2021-03-20 07:34:37,106 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13h16m21s288ms1µs300ns).
-2021-03-20 08:08:55,616 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=28m48s350ms716µs200ns).
-2021-03-20 08:57:40,195 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TaglineTradersApiApplication on LAPTOP-64GATL7J with PID 12048 (D:\Work\Vishudha\java-workspace\tagline-traders-api\target\classes started by sunil kumar in D:\Work\Vishudha\java-workspace\tagline-traders-api)
-2021-03-20 08:57:40,199 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.3.8.RELEASE, Spring v5.2.12.RELEASE
-2021-03-20 08:57:40,199 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-20 08:57:46,696 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-03-20 08:57:47,377 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
-2021-03-20 08:57:47,378 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
-2021-03-20 08:57:47,378 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
-2021-03-20 08:57:50,115 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started TaglineTradersApiApplication in 10.434 seconds (JVM running for 11.931)
-2021-03-20 08:57:59,131 INFO com.vtt.apps.controller.EmailController [http-nio-8080-exec-1] Executing sendSimpleEmail in EmailController
-2021-03-20 09:08:59,625 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TaglineTradersApiApplication on LAPTOP-64GATL7J with PID 32664 (D:\Work\Vishudha\java-workspace\tagline-traders-api\target\classes started by sunil kumar in D:\Work\Vishudha\java-workspace\tagline-traders-api)
-2021-03-20 09:08:59,627 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.3.8.RELEASE, Spring v5.2.12.RELEASE
-2021-03-20 09:08:59,629 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-20 09:09:04,385 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-03-20 09:09:04,944 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
-2021-03-20 09:09:04,944 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
-2021-03-20 09:09:04,944 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
-2021-03-20 09:09:07,266 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started TaglineTradersApiApplication in 7.973 seconds (JVM running for 8.76)
-2021-03-20 09:09:20,243 INFO com.vtt.apps.controller.EmailController [http-nio-8080-exec-2] Executing sendSimpleEmail in EmailController
-2021-03-20 09:10:20,591 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TaglineTradersApiApplication on LAPTOP-64GATL7J with PID 10220 (D:\Work\Vishudha\java-workspace\tagline-traders-api\target\classes started by sunil kumar in D:\Work\Vishudha\java-workspace\tagline-traders-api)
-2021-03-20 09:10:20,593 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.3.8.RELEASE, Spring v5.2.12.RELEASE
-2021-03-20 09:10:20,594 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-20 09:10:25,482 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-03-20 09:10:26,005 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
-2021-03-20 09:10:26,005 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
-2021-03-20 09:10:26,005 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
-2021-03-20 09:10:28,187 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started TaglineTradersApiApplication in 7.93 seconds (JVM running for 8.73)
-2021-03-20 09:10:30,405 INFO com.vtt.apps.controller.EmailController [http-nio-8080-exec-3] Executing sendSimpleEmail in EmailController
-2021-03-20 09:11:55,215 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TaglineTradersApiApplication on LAPTOP-64GATL7J with PID 7824 (D:\Work\Vishudha\java-workspace\tagline-traders-api\target\classes started by sunil kumar in D:\Work\Vishudha\java-workspace\tagline-traders-api)
-2021-03-20 09:11:55,217 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.3.8.RELEASE, Spring v5.2.12.RELEASE
-2021-03-20 09:11:55,218 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-20 09:12:00,115 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-03-20 09:12:00,692 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
-2021-03-20 09:12:00,693 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
-2021-03-20 09:12:00,693 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
-2021-03-20 09:12:02,876 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started TaglineTradersApiApplication in 8.025 seconds (JVM running for 8.858)
-2021-03-20 09:13:01,110 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TaglineTradersApiApplication on LAPTOP-64GATL7J with PID 15680 (D:\Work\Vishudha\java-workspace\tagline-traders-api\target\classes started by sunil kumar in D:\Work\Vishudha\java-workspace\tagline-traders-api)
-2021-03-20 09:13:01,113 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.3.8.RELEASE, Spring v5.2.12.RELEASE
-2021-03-20 09:13:01,114 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-20 09:13:05,822 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-03-20 09:13:06,365 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
-2021-03-20 09:13:06,366 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
-2021-03-20 09:13:06,366 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
-2021-03-20 09:13:08,659 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started TaglineTradersApiApplication in 7.876 seconds (JVM running for 8.736)
-2021-03-20 09:13:18,381 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TaglineTradersApiApplication on LAPTOP-64GATL7J with PID 21040 (D:\Work\Vishudha\java-workspace\tagline-traders-api\target\classes started by sunil kumar in D:\Work\Vishudha\java-workspace\tagline-traders-api)
-2021-03-20 09:13:18,385 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.3.8.RELEASE, Spring v5.2.12.RELEASE
-2021-03-20 09:13:18,385 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-20 09:13:23,249 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-03-20 09:13:23,840 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
-2021-03-20 09:13:23,840 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
-2021-03-20 09:13:23,840 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
-2021-03-20 09:13:25,931 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started TaglineTradersApiApplication in 7.907 seconds (JVM running for 8.764)
-2021-03-20 09:13:30,636 INFO com.vtt.apps.controller.EmailController [http-nio-8080-exec-1] Executing sendSimpleEmail in EmailController
-2021-03-20 09:14:04,709 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TaglineTradersApiApplication on LAPTOP-64GATL7J with PID 1480 (D:\Work\Vishudha\java-workspace\tagline-traders-api\target\classes started by sunil kumar in D:\Work\Vishudha\java-workspace\tagline-traders-api)
-2021-03-20 09:14:04,713 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.3.8.RELEASE, Spring v5.2.12.RELEASE
-2021-03-20 09:14:04,713 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-20 09:14:09,559 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-03-20 09:14:10,126 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
-2021-03-20 09:14:10,126 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
-2021-03-20 09:14:10,126 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
-2021-03-20 09:14:12,426 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started TaglineTradersApiApplication in 8.054 seconds (JVM running for 8.866)
-2021-03-20 09:14:17,450 INFO com.vtt.apps.controller.EmailController [http-nio-8080-exec-2] Executing sendSimpleEmail in EmailController
-2021-03-20 15:02:41,727 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TaglineTradersApiApplication on LAPTOP-64GATL7J with PID 14164 (D:\Work\Vishudha\java-workspace\tagline-traders-api\target\classes started by sunil kumar in D:\Work\Vishudha\java-workspace\tagline-traders-api)
-2021-03-20 15:02:41,731 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.3.8.RELEASE, Spring v5.2.12.RELEASE
-2021-03-20 15:02:41,731 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-20 15:02:47,606 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-03-20 15:02:48,305 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
-2021-03-20 15:02:48,306 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
-2021-03-20 15:02:48,306 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
-2021-03-20 15:02:51,238 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started TaglineTradersApiApplication in 9.872 seconds (JVM running for 10.745)
-2021-03-20 15:03:34,419 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TaglineTradersApiApplication on LAPTOP-64GATL7J with PID 21532 (D:\Work\Vishudha\java-workspace\tagline-traders-api\target\classes started by sunil kumar in D:\Work\Vishudha\java-workspace\tagline-traders-api)
-2021-03-20 15:03:34,422 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.3.8.RELEASE, Spring v5.2.12.RELEASE
-2021-03-20 15:03:34,422 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-20 15:03:39,877 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-03-20 15:03:40,609 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
-2021-03-20 15:03:40,610 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
-2021-03-20 15:03:40,610 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
-2021-03-20 15:03:43,541 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started TaglineTradersApiApplication in 9.467 seconds (JVM running for 10.288)
-2021-03-20 15:08:22,050 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TaglineTradersApiApplication on LAPTOP-64GATL7J with PID 6876 (D:\Work\Vishudha\java-workspace\tagline-traders-api\target\classes started by sunil kumar in D:\Work\Vishudha\java-workspace\tagline-traders-api)
-2021-03-20 15:08:22,054 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.3.8.RELEASE, Spring v5.2.12.RELEASE
-2021-03-20 15:08:22,054 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-20 15:08:27,319 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-03-20 15:08:27,849 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
-2021-03-20 15:08:27,849 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
-2021-03-20 15:08:27,849 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
-2021-03-20 15:08:30,329 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started TaglineTradersApiApplication in 8.763 seconds (JVM running for 9.542)
-2021-03-20 15:31:47,696 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m52s456ms858µs600ns).
-2021-03-20 15:58:00,211 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=19m12s261ms21µs200ns).
-2021-03-20 16:21:01,355 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TaglineTradersApiApplication on LAPTOP-64GATL7J with PID 26928 (D:\Work\Vishudha\java-workspace\tagline-traders-api\target\classes started by sunil kumar in D:\Work\Vishudha\java-workspace\tagline-traders-api)
-2021-03-20 16:21:01,360 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.3.8.RELEASE, Spring v5.2.12.RELEASE
-2021-03-20 16:21:01,361 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-20 16:21:06,535 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-03-20 16:21:07,079 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
-2021-03-20 16:21:07,079 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
-2021-03-20 16:21:07,079 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
-2021-03-20 16:21:09,336 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started TaglineTradersApiApplication in 8.332 seconds (JVM running for 9.231)
-2021-03-20 16:44:08,222 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TaglineTradersApiApplication on LAPTOP-64GATL7J with PID 27672 (D:\Work\Vishudha\java-workspace\tagline-traders-api\target\classes started by sunil kumar in D:\Work\Vishudha\java-workspace\tagline-traders-api)
-2021-03-20 16:44:08,225 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.3.8.RELEASE, Spring v5.2.12.RELEASE
-2021-03-20 16:44:08,226 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2021-03-20 16:44:13,825 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-03-20 16:44:14,357 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
-2021-03-20 16:44:14,357 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
-2021-03-20 16:44:14,357 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
-2021-03-20 16:44:16,699 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started TaglineTradersApiApplication in 8.855 seconds (JVM running for 9.874)
+2021-03-29 03:20:15,911 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h7m50s204ms759µs).
+2021-03-29 07:15:30,455 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h55m16s201ms769µs800ns).
+2021-03-29 07:51:17,154 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m16s748ms790µs901ns).
+2021-03-29 09:47:25,930 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 09:47:26,519 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
+2021-03-29 09:47:26,554 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2021-03-29 09:47:26,555 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
+2021-03-29 09:48:16,385 WARN org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/org/json/json/20180813/json-20180813.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-03-29 09:48:23,591 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 09:48:24,820 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 09:48:24,821 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2021-03-29 09:48:24,822 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 10:04:02,294 WARN org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/org/json/json/20180813/json-20180813.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-03-29 10:04:10,274 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 10:04:12,240 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 10:04:12,242 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2021-03-29 10:04:12,242 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 10:09:17,644 WARN org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/org/json/json/20180813/json-20180813.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-03-29 10:09:25,136 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 10:09:26,506 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 10:09:26,507 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2021-03-29 10:09:26,508 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 10:29:20,715 WARN org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/org/json/json/20180813/json-20180813.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-03-29 10:29:28,540 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 10:29:29,941 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 10:29:29,942 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2021-03-29 10:29:29,942 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 10:37:56,422 WARN org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/org/json/json/20180813/json-20180813.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-03-29 10:37:56,439 INFO org.springframework.boot.StartupInfoLogger [main] Starting TaglineTradersApiApplicationTests on LAPTOP-64GATL7J with PID 1660 (started by sunil kumar in D:\Work\Vishudha\java-workspace\tagline-traders-api)
+2021-03-29 10:37:56,440 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-29 10:37:56,439 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-03-29 10:37:58,298 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 10:37:58,581 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 272ms. Found 12 JPA repository interfaces.
+2021-03-29 10:37:59,758 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 10:37:59,854 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-29 10:38:00,090 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-29 10:38:00,511 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-03-29 10:38:00,786 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-03-29 10:38:00,814 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-03-29 10:38:03,070 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 10:38:03,081 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:38:05,158 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 10:38:06,627 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 10:38:06,844 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 10:38:06,844 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2021-03-29 10:38:06,845 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 10:38:07,557 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:38:10,985 INFO org.springframework.boot.StartupInfoLogger [main] Started TaglineTradersApiApplicationTests in 14.912 seconds (JVM running for 16.052)
+2021-03-29 10:38:11,280 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:38:11,293 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:38:11,302 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-03-29 10:38:11,319 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2021-03-29 10:48:55,764 WARN org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/org/json/json/20180813/json-20180813.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-03-29 10:48:55,777 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-03-29 10:48:55,790 INFO org.springframework.boot.StartupInfoLogger [main] Starting TaglineTradersApiApplicationTests on LAPTOP-64GATL7J with PID 14224 (started by sunil kumar in D:\Work\Vishudha\java-workspace\tagline-traders-api)
+2021-03-29 10:48:55,792 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-29 10:48:57,536 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 10:48:57,701 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 151ms. Found 12 JPA repository interfaces.
+2021-03-29 10:48:58,683 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 10:48:58,757 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-29 10:48:58,980 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-29 10:48:59,402 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-03-29 10:48:59,564 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-03-29 10:48:59,587 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-03-29 10:49:01,501 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 10:49:01,512 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:49:03,291 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 10:49:04,333 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 10:49:04,475 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 10:49:04,476 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2021-03-29 10:49:04,476 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 10:49:05,025 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:49:07,528 INFO org.springframework.boot.StartupInfoLogger [main] Started TaglineTradersApiApplicationTests in 12.117 seconds (JVM running for 13.211)
+2021-03-29 10:49:07,695 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:49:07,712 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:49:07,715 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-03-29 10:49:07,725 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2021-03-29 10:56:30,441 WARN org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/org/json/json/20180813/json-20180813.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-03-29 10:56:30,459 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-03-29 10:56:30,479 INFO org.springframework.boot.StartupInfoLogger [main] Starting TaglineTradersApiApplicationTests on LAPTOP-64GATL7J with PID 10364 (started by sunil kumar in D:\Work\Vishudha\java-workspace\tagline-traders-api)
+2021-03-29 10:56:30,480 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-29 10:56:32,437 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 10:56:32,593 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 148ms. Found 12 JPA repository interfaces.
+2021-03-29 10:56:33,548 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 10:56:33,652 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-29 10:56:33,932 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-29 10:56:34,341 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-03-29 10:56:34,559 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-03-29 10:56:34,591 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-03-29 10:56:36,618 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 10:56:36,627 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:56:39,120 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 10:56:40,091 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 10:56:40,204 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 10:56:40,204 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2021-03-29 10:56:40,205 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 10:56:40,793 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:56:43,408 INFO org.springframework.boot.StartupInfoLogger [main] Started TaglineTradersApiApplicationTests in 13.372 seconds (JVM running for 14.6)
+2021-03-29 10:56:43,728 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 10:56:43,740 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 10:56:43,743 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-03-29 10:56:43,754 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2021-03-29 13:04:31,075 WARN org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/org/json/json/20180813/json-20180813.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-03-29 13:04:31,094 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-03-29 13:04:31,112 INFO org.springframework.boot.StartupInfoLogger [main] Starting TaglineTradersApiApplicationTests on LAPTOP-64GATL7J with PID 20060 (started by sunil kumar in D:\Work\Vishudha\java-workspace\tagline-traders-api)
+2021-03-29 13:04:31,113 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-29 13:04:32,844 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 13:04:33,012 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 156ms. Found 12 JPA repository interfaces.
+2021-03-29 13:04:34,030 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 13:04:34,103 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-29 13:04:34,293 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-29 13:04:34,725 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-03-29 13:04:34,981 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-03-29 13:04:35,008 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-03-29 13:04:37,239 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 13:04:37,251 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 13:04:39,076 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 13:04:40,140 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 13:04:40,295 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 13:04:40,296 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2021-03-29 13:04:40,296 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 13:04:40,800 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 13:04:43,382 INFO org.springframework.boot.StartupInfoLogger [main] Started TaglineTradersApiApplicationTests in 12.676 seconds (JVM running for 13.819)
+2021-03-29 13:04:43,616 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 13:04:43,628 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 13:04:43,630 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-03-29 13:04:43,637 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2021-03-29 13:10:07,345 WARN org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/org/json/json/20180813/json-20180813.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-03-29 13:10:07,389 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-03-29 13:10:07,394 INFO org.springframework.boot.StartupInfoLogger [main] Starting TaglineTradersApiApplicationTests on LAPTOP-64GATL7J with PID 19476 (started by sunil kumar in D:\Work\Vishudha\java-workspace\tagline-traders-api)
+2021-03-29 13:10:07,396 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-29 13:10:10,340 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 13:10:10,543 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 188ms. Found 12 JPA repository interfaces.
+2021-03-29 13:10:11,497 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 13:10:11,585 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-29 13:10:11,760 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-29 13:10:12,155 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-03-29 13:10:12,340 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-03-29 13:10:12,363 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-03-29 13:10:14,273 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 13:10:14,282 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 13:10:16,077 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 13:10:17,099 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 13:10:17,232 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 13:10:17,232 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2021-03-29 13:10:17,233 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 13:10:17,738 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 13:10:20,330 INFO org.springframework.boot.StartupInfoLogger [main] Started TaglineTradersApiApplicationTests in 13.763 seconds (JVM running for 16.243)
+2021-03-29 13:10:20,581 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 13:10:20,596 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 13:10:20,600 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-03-29 13:10:20,615 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2021-03-29 13:10:54,254 WARN org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/org/json/json/20180813/json-20180813.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-03-29 13:10:54,267 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-03-29 13:10:54,274 INFO org.springframework.boot.StartupInfoLogger [main] Starting TaglineTradersApiApplicationTests on LAPTOP-64GATL7J with PID 16044 (started by sunil kumar in D:\Work\Vishudha\java-workspace\tagline-traders-api)
+2021-03-29 13:10:54,275 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-29 13:10:55,973 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 13:10:56,129 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 142ms. Found 12 JPA repository interfaces.
+2021-03-29 13:10:57,137 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 13:10:57,195 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-29 13:10:57,357 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-29 13:10:57,783 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-03-29 13:10:58,149 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-03-29 13:10:58,172 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-03-29 13:11:00,179 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 13:11:00,188 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 13:11:02,023 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 13:11:03,059 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 13:11:03,201 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 13:11:03,202 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2021-03-29 13:11:03,202 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 13:11:03,759 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 13:11:06,416 INFO org.springframework.boot.StartupInfoLogger [main] Started TaglineTradersApiApplicationTests in 12.574 seconds (JVM running for 13.685)
+2021-03-29 13:11:06,634 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 13:11:06,649 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 13:11:06,652 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-03-29 13:11:06,661 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2021-03-29 13:12:16,674 WARN org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/org/json/json/20180813/json-20180813.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-03-29 13:12:16,687 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-03-29 13:12:16,704 INFO org.springframework.boot.StartupInfoLogger [main] Starting TaglineTradersApiApplicationTests on LAPTOP-64GATL7J with PID 6108 (started by sunil kumar in D:\Work\Vishudha\java-workspace\tagline-traders-api)
+2021-03-29 13:12:16,705 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-29 13:12:18,429 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 13:12:18,611 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 167ms. Found 12 JPA repository interfaces.
+2021-03-29 13:12:19,579 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 13:12:19,645 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-29 13:12:19,845 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-29 13:12:20,296 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-03-29 13:12:20,507 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-03-29 13:12:20,529 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-03-29 13:12:22,454 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 13:12:22,463 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 13:12:24,257 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 13:12:25,372 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 13:12:25,530 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 13:12:25,532 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2021-03-29 13:12:25,533 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 13:12:26,092 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 13:12:28,662 INFO org.springframework.boot.StartupInfoLogger [main] Started TaglineTradersApiApplicationTests in 12.348 seconds (JVM running for 13.45)
+2021-03-29 13:12:28,871 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 13:12:28,884 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 13:12:28,886 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-03-29 13:12:28,900 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2021-03-29 13:15:05,560 WARN org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/org/json/json/20180813/json-20180813.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-03-29 13:15:05,595 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-03-29 13:15:05,611 INFO org.springframework.boot.StartupInfoLogger [main] Starting TaglineTradersApiApplicationTests on LAPTOP-64GATL7J with PID 2060 (started by sunil kumar in D:\Work\Vishudha\java-workspace\tagline-traders-api)
+2021-03-29 13:15:05,612 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-29 13:15:09,173 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 13:15:09,529 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 337ms. Found 12 JPA repository interfaces.
+2021-03-29 13:15:11,504 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 13:15:11,682 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-29 13:15:12,088 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-29 13:15:12,897 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-03-29 13:15:13,275 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-03-29 13:15:13,322 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-03-29 13:15:16,597 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 13:15:16,617 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 13:15:19,904 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 13:15:21,717 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 13:15:21,955 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 13:15:21,956 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2021-03-29 13:15:21,957 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 13:15:22,910 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 13:15:27,554 INFO org.springframework.boot.StartupInfoLogger [main] Started TaglineTradersApiApplicationTests in 22.753 seconds (JVM running for 25.069)
+2021-03-29 13:15:27,962 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 13:15:27,993 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 13:15:27,997 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-03-29 13:15:28,023 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2021-03-29 13:21:13,222 WARN org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/org/json/json/20180813/json-20180813.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-03-29 13:21:13,223 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-03-29 13:21:13,239 INFO org.springframework.boot.StartupInfoLogger [main] Starting TaglineTradersApiApplicationTests on LAPTOP-64GATL7J with PID 652 (started by sunil kumar in D:\Work\Vishudha\java-workspace\tagline-traders-api)
+2021-03-29 13:21:13,240 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-29 13:21:14,948 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 13:21:15,078 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 118ms. Found 12 JPA repository interfaces.
+2021-03-29 13:21:16,121 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 13:21:16,208 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-29 13:21:16,402 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-29 13:21:16,750 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-03-29 13:21:16,961 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-03-29 13:21:16,989 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-03-29 13:21:19,143 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 13:21:19,152 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 13:21:20,845 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 13:21:22,057 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 13:21:22,202 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 13:21:22,203 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2021-03-29 13:21:22,204 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 13:21:22,778 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 13:21:25,237 INFO org.springframework.boot.StartupInfoLogger [main] Started TaglineTradersApiApplicationTests in 12.305 seconds (JVM running for 13.366)
+2021-03-29 13:21:25,452 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 13:21:25,465 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 13:21:25,469 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-03-29 13:21:25,477 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2021-03-29 13:42:54,534 WARN org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer [main] 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/org/json/json/20180813/json-20180813.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/sunil%20kumar/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2021-03-29 13:42:54,555 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.1.7.Final
+2021-03-29 13:42:54,557 INFO org.springframework.boot.StartupInfoLogger [main] Starting TaglineTradersApiApplicationTests on LAPTOP-64GATL7J with PID 1904 (started by sunil kumar in D:\Work\Vishudha\java-workspace\tagline-traders-api)
+2021-03-29 13:42:54,558 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2021-03-29 13:42:56,297 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-03-29 13:42:56,450 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 141ms. Found 12 JPA repository interfaces.
+2021-03-29 13:42:57,395 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-03-29 13:42:57,452 INFO org.hibernate.Version [main] HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-03-29 13:42:57,633 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-03-29 13:42:57,959 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-03-29 13:42:58,109 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-03-29 13:42:58,129 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-03-29 13:43:00,082 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-03-29 13:43:00,090 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 13:43:01,999 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-29 13:43:03,114 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [main] Exposing 2 endpoint(s) beneath base path '/actuator'
+2021-03-29 13:43:03,251 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 13:43:03,252 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2021-03-29 13:43:03,253 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [main] ---
+2021-03-29 13:43:03,792 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-29 13:43:06,511 INFO org.springframework.boot.StartupInfoLogger [main] Started TaglineTradersApiApplicationTests in 12.315 seconds (JVM running for 13.407)
+2021-03-29 13:43:06,725 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-29 13:43:06,738 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-03-29 13:43:06,741 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-03-29 13:43:06,751 INFO com.zaxxer.hikari.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.

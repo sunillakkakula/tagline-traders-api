@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
 
-    <property name="LOGS" value="./logs" />
+    <property name="LOGS" value="/logs" />
 
     <appender name="Console"
         class="ch.qos.logback.core.ConsoleAppender">
@@ -37,11 +37,13 @@
         <appender-ref ref="RollingFile" />
         <appender-ref ref="Console" />
     </root>
+    <root level="error">
+        <appender-ref ref="RollingFile" />
+    </root>
 
     <!-- LOG "com.vtt.apps*" at TRACE level -->
-    <logger name="com.vtt.apps" level="trace" additivity="false">
+    <logger name="com.vtt" level="debug" additivity="false">
         <appender-ref ref="RollingFile" />
-        <appender-ref ref="Console" />
     </logger>
 
 </configuration>

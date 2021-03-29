@@ -1,0 +1,15 @@
+2021-03-23 19:32:00,251 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting TaglineTradersApiApplication on LAPTOP-64GATL7J with PID 16968 (D:\Work\Vishudha\java-workspace\tagline-traders-api\target\classes started by sunil kumar in D:\Work\Vishudha\java-workspace\tagline-traders-api)
+2021-03-23 19:32:00,257 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v2.3.8.RELEASE, Spring v5.2.12.RELEASE
+2021-03-23 19:32:00,258 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-03-23 19:32:09,096 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-03-23 19:32:09,950 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
+2021-03-23 19:32:09,950 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+2021-03-23 19:32:09,950 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
+2021-03-23 19:32:13,257 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started TaglineTradersApiApplication in 13.629 seconds (JVM running for 15.237)
+2021-03-23 19:32:37,782 INFO com.vtt.apps.controller.HelloController [http-nio-8080-exec-1] INFO-wish
+2021-03-23 19:32:37,783 WARN com.vtt.apps.controller.HelloController [http-nio-8080-exec-1] WARN-wish
+2021-03-23 19:32:37,784 TRACE com.vtt.apps.controller.HelloController [http-nio-8080-exec-1] TRACE-wish
+2021-03-23 19:32:37,784 ERROR com.vtt.apps.controller.HelloController [http-nio-8080-exec-1] ERROR-wish
+2021-03-23 19:32:37,785 DEBUG com.vtt.apps.controller.HelloController [http-nio-8080-exec-1] DEBUG-wish
+2021-03-23 19:55:14,764 INFO com.vtt.apps.controller.UserDetailsController [http-nio-8080-exec-5] Executing retrieveAll in UsersController
+2021-03-23 20:32:32,570 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m27s33ms838µs200ns).
