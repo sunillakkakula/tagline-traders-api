@@ -1,0 +1,37 @@
+tagline-traders-api-2021-04-09 18:06:02 [restartedMain] INFO  c.v.a.TaglineTradersApiApplication - Starting TaglineTradersApiApplication on LAPTOP-64GATL7J with PID 3004 (D:\Work\Vishudha\java-workspace\tagline-traders-api\target\classes started by sunil kumar in D:\Work\Vishudha\java-workspace\tagline-traders-api)
+tagline-traders-api-2021-04-09 18:06:02 [restartedMain] INFO  c.v.a.TaglineTradersApiApplication - No active profile set, falling back to default profiles: default
+tagline-traders-api-2021-04-09 18:06:02 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+tagline-traders-api-2021-04-09 18:06:02 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+tagline-traders-api-2021-04-09 18:06:03 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+tagline-traders-api-2021-04-09 18:06:04 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 98ms. Found 12 JPA repository interfaces.
+tagline-traders-api-2021-04-09 18:06:04 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5000 (http)
+tagline-traders-api-2021-04-09 18:06:04 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+tagline-traders-api-2021-04-09 18:06:04 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+tagline-traders-api-2021-04-09 18:06:04 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+tagline-traders-api-2021-04-09 18:06:04 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2170 ms
+tagline-traders-api-2021-04-09 18:06:05 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+tagline-traders-api-2021-04-09 18:06:05 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.27.Final
+tagline-traders-api-2021-04-09 18:06:05 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+tagline-traders-api-2021-04-09 18:06:05 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+tagline-traders-api-2021-04-09 18:06:05 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+tagline-traders-api-2021-04-09 18:06:05 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+tagline-traders-api-2021-04-09 18:06:06 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+tagline-traders-api-2021-04-09 18:06:06 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+tagline-traders-api-2021-04-09 18:06:07 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+tagline-traders-api-2021-04-09 18:06:07 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+tagline-traders-api-2021-04-09 18:06:08 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+tagline-traders-api-2021-04-09 18:06:08 [restartedMain] WARN  o.s.d.r.webmvc.halbrowser.HalBrowser - ---
+tagline-traders-api-2021-04-09 18:06:08 [restartedMain] WARN  o.s.d.r.webmvc.halbrowser.HalBrowser - Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
+tagline-traders-api-2021-04-09 18:06:08 [restartedMain] WARN  o.s.d.r.webmvc.halbrowser.HalBrowser - ---
+tagline-traders-api-2021-04-09 18:06:08 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+tagline-traders-api-2021-04-09 18:06:09 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 5000 (http) with context path ''
+tagline-traders-api-2021-04-09 18:06:09 [http-nio-5000-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+tagline-traders-api-2021-04-09 18:06:09 [http-nio-5000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+tagline-traders-api-2021-04-09 18:06:09 [http-nio-5000-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 22 ms
+tagline-traders-api-2021-04-09 18:06:09 [http-nio-5000-exec-1] INFO  c.v.apps.controller.HelloController - INFO-wish
+tagline-traders-api-2021-04-09 18:06:09 [http-nio-5000-exec-1] WARN  c.v.apps.controller.HelloController - WARN-wish
+tagline-traders-api-2021-04-09 18:06:09 [http-nio-5000-exec-1] ERROR c.v.apps.controller.HelloController - ERROR-wish
+tagline-traders-api-2021-04-09 18:06:12 [restartedMain] INFO  c.v.a.TaglineTradersApiApplication - Started TaglineTradersApiApplication in 10.38 seconds (JVM running for 11.189)
+tagline-traders-api-2021-04-09 18:06:17 [http-nio-5000-exec-2] INFO  c.v.apps.controller.HelloController - INFO-wish
+tagline-traders-api-2021-04-09 18:06:17 [http-nio-5000-exec-2] WARN  c.v.apps.controller.HelloController - WARN-wish
+tagline-traders-api-2021-04-09 18:06:17 [http-nio-5000-exec-2] ERROR c.v.apps.controller.HelloController - ERROR-wish

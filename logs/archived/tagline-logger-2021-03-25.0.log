@@ -1,5 +1,0 @@
-2021-03-25 11:30:06,376 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-03-25 11:30:06,934 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
-2021-03-25 11:30:06,935 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] Spring Data REST HAL Browser is deprecated! Prefer the HAL Explorer (artifactId: spring-data-rest-hal-explorer)!
-2021-03-25 11:30:06,937 WARN org.springframework.data.rest.webmvc.halbrowser.HalBrowser [restartedMain] ---
-2021-03-25 13:45:08,709 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h13m4s994ms532µs100ns).

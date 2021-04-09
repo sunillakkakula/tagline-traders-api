@@ -1,7 +1,0 @@
-2021-03-13 00:14:35,706 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59m38s164ms618µs500ns).
-2021-03-13 09:22:07,086 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h7m33s322ms292µs700ns).
-2021-03-13 09:56:12,772 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m35s746ms768µs600ns).
-2021-03-13 10:15:54,178 INFO com.vtt.apps.controller.ProductController [http-nio-8080-exec-1] Executing fetchBestSellerVttProducts in ProductController
-2021-03-13 10:15:54,462 INFO com.vtt.apps.controller.CategoryController [http-nio-8080-exec-2] Executing retrieveAll in CategoryController
-2021-03-13 12:56:15,134 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h28m32s15ms488µs500ns).
-2021-03-13 21:50:15,645 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7h3m1s952ms361µs300ns).
