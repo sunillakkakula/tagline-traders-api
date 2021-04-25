@@ -27,7 +27,7 @@ import com.vtt.apps.repository.UserDetailsRepository;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:9090")
+@CrossOrigin(origins = "*")
 public class UserDetailsController {
 
 	private final Logger LOGGER = LoggerFactory.getLogger(getClass());

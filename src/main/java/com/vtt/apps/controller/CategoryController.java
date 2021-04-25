@@ -25,7 +25,7 @@ import com.vtt.apps.service.CategoryService;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:9090")
+@CrossOrigin(origins = "*")
 public class CategoryController {
 
 	private final Logger LOGGER = LoggerFactory.getLogger(getClass());

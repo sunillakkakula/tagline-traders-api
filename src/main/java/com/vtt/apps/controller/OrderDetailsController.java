@@ -31,7 +31,7 @@ import com.vtt.apps.repository.UserDetailsRepository;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:9090")
+@CrossOrigin(origins = "*")
 public class OrderDetailsController {
 
 	private final Logger LOGGER = LoggerFactory.getLogger(getClass());

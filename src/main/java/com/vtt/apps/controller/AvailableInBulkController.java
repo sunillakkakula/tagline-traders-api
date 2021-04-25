@@ -25,7 +25,7 @@ import com.vtt.apps.repository.ProductRepository;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:9090")
+@CrossOrigin(origins = "*")
 public class AvailableInBulkController {
 
 	private final Logger LOGGER = LoggerFactory.getLogger(getClass());

@@ -24,7 +24,7 @@ import com.vtt.apps.repository.ShippingDetailsRepository;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:9090")
+@CrossOrigin(origins = "*")
 public class ShippingDetailsController {
 
 	private final Logger LOGGER = LoggerFactory.getLogger(getClass());

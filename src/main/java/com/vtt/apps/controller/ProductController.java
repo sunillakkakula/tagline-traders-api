@@ -26,7 +26,7 @@ import com.vtt.apps.repository.SubCategoryRepository;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:9090")
+@CrossOrigin(origins = "*")
 public class ProductController {
 
 	private final Logger LOGGER = LoggerFactory.getLogger(getClass());
